@@ -19,5 +19,6 @@
         "js/content_script.js"
       ]
     }
-  ]
+  ],
+  "content_security_policy": "script-src 'self'; object-src 'self'; media-src https://words-audio.baydn.com"
 } 
