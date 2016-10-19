@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Translation",
+  "version": "0.1",
+  "description": "A chrome extension for translate English words using Shanbay's API",
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_title": "Translation"
+  },
+  "permissions": [
+    "https://api.shanbay.com/bdc/search/",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "js": [
+        "js/jquery-3.1.1.min.js",
+        "js/content_script.js"
+      ]
+    }
+  ]
+} 
